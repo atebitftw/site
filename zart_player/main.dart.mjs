@@ -454,6 +454,8 @@ class CompiledApp {
       _1362: f => finalizeWrapper(f, function(x0) { return dartInstance.exports._1362(f,arguments.length,x0) }),
       _1363: (x0,x1) => x0.removeChild(x1),
       _1364: x0 => x0.click(),
+      _1365: x0 => new Blob(x0),
+      _1366: x0 => globalThis.URL.revokeObjectURL(x0),
       _1368: Date.now,
       _1370: s => new Date(s * 1000).getTimezoneOffset() * 60,
       _1371: s => {
@@ -474,6 +476,18 @@ class CompiledApp {
       _1373: () => typeof dartUseDateNowForTicks !== "undefined",
       _1374: () => 1000 * performance.now(),
       _1375: () => Date.now(),
+      _1376: () => {
+        // On browsers return `globalThis.location.href`
+        if (globalThis.location != null) {
+          return globalThis.location.href;
+        }
+        return null;
+      },
+      _1377: () => {
+        return typeof process != "undefined" &&
+               Object.prototype.toString.call(process) == "[object process]" &&
+               process.platform == "win32"
+      },
       _1378: () => new WeakMap(),
       _1379: (map, o) => map.get(o),
       _1380: (map, o, v) => map.set(o, v),
@@ -739,6 +753,9 @@ class CompiledApp {
       _1639: x0 => x0.button,
       _1759: (x0,x1) => { x0.draggable = x1 },
       _1775: x0 => x0.style,
+      _2132: (x0,x1) => { x0.target = x1 },
+      _2134: (x0,x1) => { x0.download = x1 },
+      _2159: (x0,x1) => { x0.href = x1 },
       _2704: (x0,x1) => { x0.accept = x1 },
       _2718: x0 => x0.files,
       _2744: (x0,x1) => { x0.multiple = x1 },
