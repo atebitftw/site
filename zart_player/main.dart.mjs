@@ -513,6 +513,7 @@ class CompiledApp {
       _1413: (a, i) => a.splice(i, 1),
       _1414: (a, s) => a.join(s),
       _1415: (a, s, e) => a.slice(s, e),
+      _1416: (a, s, e) => a.splice(s, e),
       _1418: a => a.length,
       _1420: (a, i) => a[i],
       _1421: (a, i, v) => a[i] = v,
