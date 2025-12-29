@@ -94,7 +94,8 @@
         .project-image {
             width: 100%;
             height: 200px;
-            object-fit: cover;
+            object-fit: contain;
+            background-color: rgba(15, 23, 42, 0.8);
             border-bottom: 1px solid var(--card-border);
         }
 
@@ -320,14 +321,19 @@
                 image: "assets/alexandria.png"
             }, {
                 title: "Zart",
-                description: "A z-machine interpreter for Interactive Fiction (IF) games.",
+                description: "An interpreter library for Interactive Fiction (IF) games.  Supports z-machine and Inform 6/7 (Glulx).",
                 link: "https://pub.dev/packages/zart",
                 image: "assets/zart.png"
             }, {
                 title: "Zart Web Player",
                 description: "A Flutter Web application for playing IF games using Zart.  The app lets you upload game files and play them.  Visit https://ifdb.org/ to download games (or play them there).",
                 link: "zart_player/",
-                image: "assets/zart_logo.png"
+                image: "assets/zart_web_logo.png"
+            }, {
+                title: "Zart CLI Player",
+                description: "A Dart CLI application for playing IF games using Zart.  Click to see the github repo and instructions.",
+                link: "https://github.com/atebitftw/zart_cli",
+                image: "assets/zart_cli_title_screen.png"
             }
         ];
 
