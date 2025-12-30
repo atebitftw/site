@@ -94225,7 +94225,7 @@ break
 case 5:return A.x(null,r)
 case 1:return A.w(p.at(-1),r)}})
 return A.y($async$yM,r)},
-L(a){var s,r,q,p,o=null,n=B.h7.ma(0.95),m=A.is(24),l=A.auO(B.k.ma(0.1),1),k=A.b([new A.dT(5,B.eo,B.l.ma(0.5),B.h,20)],t.sq),j=A.bz("> Zart Web Player",o,o,o,A.axB().$3$color$fontSize$fontWeight(B.k,32,B.ao),o,o),i=A.aND(o,o,new A.x9("assets/zart_logo.png",o,o)),h=A.bz("Interactive Fiction (IF) Player",o,o,o,A.axB().$1$color(B.c4),B.ci,o),g=A.bz("Plays Z-Machine and Inform 6/7 games.",o,o,o,A.axB().$1$color(B.c4),B.ci,o)
+L(a){var s,r,q,p,o=null,n=B.h7.ma(0.95),m=A.is(24),l=A.auO(B.k.ma(0.1),1),k=A.b([new A.dT(5,B.eo,B.l.ma(0.5),B.h,20)],t.sq),j=A.bz("> Zart Web Player",o,o,o,A.axB().$3$color$fontSize$fontWeight(B.k,28,B.ao),o,o),i=A.aND(o,o,new A.x9("assets/zart_logo.png",o,o)),h=A.bz("Interactive Fiction (IF) Player",o,o,o,A.axB().$1$color(B.c4),B.ci,o),g=A.bz("Plays Z-Machine and Inform 6/7 games.",o,o,o,A.axB().$1$color(B.c4),B.ci,o)
 if(this.d)s=B.Du
 else{s=A.os().$2$fontSize$fontWeight(16,B.ao)
 s=A.avg(B.H8,B.VS,this.gaix(),A.JX(o,o,B.cd,o,o,o,o,o,o,B.l,o,o,B.nM,o,new A.cP(A.is(16),B.t),o,o,o,s,o))}r=A.bz("Or...",o,o,o,A.os().$1$color(B.c4),B.ci,o)
